@@ -270,12 +270,54 @@
         .project-link:hover {
             color: var(--secondary-color);
         }
+
+        .volunteering-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .volunteering-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .volunteering-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .volunteering-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .volunteering-card p {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .volunteering-card ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .volunteering-card ul li {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: var(--text-color);
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Japhet Idukundiriho</h1>
-        <p>Full-Stack Developer | React & Django Specialist | Agile Development</p>
+        <p>Full-Stack Developer | React & Django Specialist | Software Engineering Student</p>
         <img src="updatedportifolio.jpeg" alt="Japhet Idukundiriho" class="profile-img">
     </header>
     
@@ -351,6 +393,39 @@
                     <div class="skill-tag">Docker</div>
                     <div class="skill-tag">VS Code</div>
                     <div class="skill-tag">Postman</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteering">
+            <h2>Volunteering</h2>
+            <div class="volunteering-grid">
+                <div class="volunteering-card">
+                    <h3>Tech Mentor</h3>
+                    <p><strong>Rwanda Coding Academy</strong> | Kigali, Rwanda | Jan 2023 – Present</p>
+                    <ul>
+                        <li>Mentored aspiring developers in web development, focusing on React and Django.</li>
+                        <li>Conducted workshops on version control (Git) and collaborative coding practices.</li>
+                        <li>Helped students debug code and improve their problem-solving skills.</li>
+                    </ul>
+                </div>
+                <div class="volunteering-card">
+                    <h3>Open-Source Contributor</h3>
+                    <p><strong>Open Source Community</strong> | Remote | Jun 2022 – Present</p>
+                    <ul>
+                        <li>Contributed to open-source projects on GitHub, focusing on improving documentation and fixing bugs.</li>
+                        <li>Collaborated with developers worldwide to enhance project functionality.</li>
+                        <li>Promoted the use of open-source tools in local developer communities.</li>
+                    </ul>
+                </div>
+                <div class="volunteering-card">
+                    <h3>Open-Source Contributor</h3>
+                    <p><strong>Open Source Community</strong> | Remote | Mar 2023 – Present</p>
+                    <ul>
+                        <li>Contributed to a React-based open-source project, adding new features and improving UI components.</li>
+                        <li>Reviewed and merged pull requests from other contributors.</li>
+                        <li>Documented project workflows to make it easier for new contributors to get started.</li>
+                    </ul>
                 </div>
             </div>
         </section>
